@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "notification",
+      "type": "org.formation.MailConfigurationProperties",
+      "sourceType": "org.formation.MailConfigurationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "notification.auth",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.formation.MailConfigurationProperties"
+    },
+    {
+      "name": "notification.debug",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.formation.MailConfigurationProperties"
+    },
+    {
+      "name": "notification.host",
+      "type": "java.lang.String",
+      "sourceType": "org.formation.MailConfigurationProperties"
+    },
+    {
+      "name": "notification.password",
+      "type": "java.lang.String",
+      "sourceType": "org.formation.MailConfigurationProperties"
+    },
+    {
+      "name": "notification.port",
+      "type": "java.lang.Integer",
+      "sourceType": "org.formation.MailConfigurationProperties"
+    },
+    {
+      "name": "notification.protocol",
+      "type": "java.lang.String",
+      "sourceType": "org.formation.MailConfigurationProperties"
+    },
+    {
+      "name": "notification.startls",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.formation.MailConfigurationProperties"
+    },
+    {
+      "name": "notification.username",
+      "type": "java.lang.String",
+      "sourceType": "org.formation.MailConfigurationProperties"
+    }
+  ],
+  "hints": []
+}

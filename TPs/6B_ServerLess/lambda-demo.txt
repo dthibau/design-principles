@@ -1,0 +1,21 @@
+# Connexion console PLB
+https://897021361213.signin.aws.amazon.com/console
+
+ID : 897021361213
+Utilisateur : david_thibau
+
+Mot de passe : DaTh_2019
+
+
+# Service DynamoDB 
+https://us-east-2.console.aws.amazon.com/dynamodb/home?region=us-east-2#tables:selected=USERS;tab=overview
+
+# Service IAM
+https://console.aws.amazon.com/iam/home?region=us-east-2#/roles
+
+Visulisation des droits sur la dynamodb en json
+
+# Lamda 
+https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/functions/SEDP?newFunction=true&tab=graph
+
+Visualisation du code et des requêtes test

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: client
+
+eureka:
+  client:
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://annuaire:1111/eureka/
+
+

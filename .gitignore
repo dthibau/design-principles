@@ -1,0 +1,15 @@
+*.odp
+*.odt
+*.zip
+*.exe
+*.jar
+*.msi
+*.log
+.classpath
+.settings
+.project
+*.class
+*.gz
+.vagrant/
+**/.attach*
+

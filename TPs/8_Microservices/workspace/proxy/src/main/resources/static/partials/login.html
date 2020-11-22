@@ -1,0 +1,22 @@
+
+<form id="greetForm">
+	<div class="form-group">
+		<label for="email">Email address:</label> <input
+			ng-model="membre.email" class="form-control" id="email" type="email" />
+	</div>
+	<div class="form-group">
+		<label for="pwd">Password:</label> <input type="password"
+			ng-model="membre.password" class="form-control" id="pwd" />
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<button id="add" ng-click="enter()">Enter</button>
+
+		</div>
+		<div class="col-sm-6">
+			Pas encore membre ?
+			<button id="register" ng-click="register()">Inscrivez vous</button>
+		</div>
+	</div>
+
+</form>

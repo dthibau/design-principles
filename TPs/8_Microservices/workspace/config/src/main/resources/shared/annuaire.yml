@@ -1,0 +1,38 @@
+
+server.port: 1111
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://annuaire:1111/eureka/
+---
+spring:
+  profiles: peer1
+
+server.port: 1111
+
+eureka:
+  instance:
+    hostname: annuaire1
+  client:
+    serviceUrl:
+      defaultZone: http://annuaire:1112/eureka/
+
+
+---
+spring:
+  profiles: peer2
+
+server.port: 1112
+eureka:
+  instance:
+    hostname: annuaire2
+  client:
+    serviceUrl:
+      defaultZone: http://annuaire:1111/eureka/
+         
+
+  
+    

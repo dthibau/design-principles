@@ -1,0 +1,67 @@
+version: '2'
+services:
+  config:
+    build: ./config/
+    restart: always
+    networks:
+     - back
+    ports:
+     - "8888:8888"
+  annuaire:
+    build: ./annuaire/
+    networks:
+     - back
+    ports:
+     - "1111:1111"
+    restart: always
+    depends_on:
+      - config
+  document-service:
+    build: ./document-service/
+    networks:
+     - back
+    restart: always
+    depends_on:
+      - config
+  notification-service:
+    build: ./notification-service/
+    networks:
+     - back
+    restart: always
+    depends_on:
+      - config
+  members-service:
+    build: ./members-service/
+    networks:
+      - back
+    restart: always
+    depends_on:
+      - config
+  turbine:
+    build: ./turbine/
+    networks:
+      - back
+    restart: always
+    depends_on:
+      - config
+    ports:
+     - "5555:5555"
+  proxy:
+    build: ./proxy/
+    networks:
+      - front
+      - back
+    ports:
+      - 8081:8081
+    restart: always
+    depends_on:
+      - config
+  fake-smtp:
+    build: ./fake-smtp/
+    networks:
+      - front
+
+
+networks:
+  back:
+  front:

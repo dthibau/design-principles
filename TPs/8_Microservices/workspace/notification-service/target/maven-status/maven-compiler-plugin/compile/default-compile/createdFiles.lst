@@ -1,0 +1,8 @@
+org/formation/controller/Email.class
+org/formation/MailConfigurationProperties.class
+org/formation/NotificationServer.class
+org/formation/MailConfiguration.class
+META-INF/spring-configuration-metadata.json
+org/formation/controller/NotificationController.class
+org/formation/service/EmailService.class
+org/formation/service/EmailServiceImpl.class

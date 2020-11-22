@@ -1,0 +1,30 @@
+spring:
+  freemarker:
+    enabled: false           # Ignore Eureka dashboard FreeMarker templates
+  thymeleaf:
+    cache: false             # Allow Thymeleaf templates to be reloaded at runtime
+
+
+error:
+  path: /error    
+
+# HTTP Server
+server:
+  port: 8081   # HTTP (Tomcat) port
+  
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+  routes:
+    order-service:
+        path: /order-service/**
+        stripPrefix: true
+        sensitiveHeaders: false
+
+    product-service:
+        path: /product-service/**
+        stripPrefix: true
+ 

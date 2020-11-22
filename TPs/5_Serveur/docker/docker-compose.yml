@@ -1,0 +1,25 @@
+version: '3'
+services:
+  jmeter:
+    build: docker-jmeter
+    entrypoint: /bin/sh
+    stdin_open: true
+    tty: true
+    networks:
+     - lan
+  imperative:
+    build: imperative
+    ports:
+      - 8080:8080
+    networks:
+     - lan
+  reactive:
+    build: reactive
+    ports:
+      - 9090:8080
+    networks:
+     - lan
+
+networks:
+  lan:
+

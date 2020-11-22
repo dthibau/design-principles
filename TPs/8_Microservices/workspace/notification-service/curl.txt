@@ -1,0 +1,11 @@
+
+#Send email
+curl -XPOST -H "Content-Type: application/json" 'http://localhost:9090/sendSimple' --data-binary "@email.json" | python -m json.tool
+
+
+
+curl -XPOST http://localhost:9090/refresh
+
+
+# Member-service
+curl -XPOST -H "Content-Type: application/json" 'http://localhost:2222/order' --data-binary "@order.json" | python -m json.tool

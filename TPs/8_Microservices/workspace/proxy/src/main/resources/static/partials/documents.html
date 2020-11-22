@@ -1,0 +1,9 @@
+<h1>Documents</h1>
+
+<ul class="documents">
+        <li ng-repeat="document in documents | orderBy:name"
+            class="thumbnail">
+          <a href="">{{document.name}}</a> ({{document.contentType}}) <span ng-bind="document.uploadedDate | date:'dd/MM/yyyy'"></span>
+        </li>
+      </ul>
+      

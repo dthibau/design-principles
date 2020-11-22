@@ -1,0 +1,19 @@
+# Starting Kafka containers
+docker-compose up -d
+
+# Starting micro-services application
+java -Xmx128m -jar ../../MyWork/workspace-spring-tool-suite-4-4.2.0.RELEASE/14_cloud-stream/target/cloud-stream-0.0.1-SNAPSHOT.jar
+
+java -Xmx128m -jar ../../MyWork/workspace-spring-tool-suite-4-4.2.0.RELEASE/14_cloud-stream-average/target/cloud-stream-0.0.1-SNAPSHOT.jar
+
+# starting ES
+./bin/elasticsearch
+
+# starting Kibana
+./bin/kibana
+
+# Starting logstash
+bin/logstash -r -f ../../TPs/15_ELK/logstash-kafka.conf 
+
+# Starting jmeter
+bin/jmeter -n -t ../../TPs/15_ELK/Posiitions.jmx

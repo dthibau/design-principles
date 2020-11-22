@@ -1,0 +1,7 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1559578995617,1748,HTML Page Test,200,OK,Scenario 1 1-1,text,true,,18854,230,1,1,https://www.map5.nl/,915,0,817
+1559578995617,916,HTML Page Test-0,302,Found,Scenario 1 1-1,text,true,,551,115,1,1,http://www.map5.nl/,915,0,817
+1559578996540,825,HTML Page Test-1,200,OK,Scenario 1 1-1,text,true,,18303,115,1,1,https://www.map5.nl/,824,0,649
+1559578998419,981,HTML Page Test,200,OK,Scenario 1 1-1,text,true,,18854,230,1,1,https://www.map5.nl/,252,0,166
+1559578998419,252,HTML Page Test-0,302,Found,Scenario 1 1-1,text,true,,551,115,1,1,http://www.map5.nl/,252,0,166
+1559578998672,728,HTML Page Test-1,200,OK,Scenario 1 1-1,text,true,,18303,115,1,1,https://www.map5.nl/,727,0,555

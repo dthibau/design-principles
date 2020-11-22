@@ -1,0 +1,23 @@
+server:
+  port: 9090
+
+notification:
+  port: 2525
+  host: fake-smtp
+  username: fake
+  password: fake
+
+    
+---
+spring:
+  profiles: replica
+
+server:
+  port: 9091 
+  
+  
+notification:
+  port: 2525
+  host: fake-smtp
+  username: fake
+  password: fake
