@@ -12,4 +12,5 @@
 *.gz
 .vagrant/
 **/.attach*
-
+**#
+**~
