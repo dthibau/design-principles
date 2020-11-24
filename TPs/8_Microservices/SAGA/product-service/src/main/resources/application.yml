@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: product-service
+  cloud:
+
+    stream:
+      kafka:
+        binder:
+          brokers: kafka
+      bindings:
+        orders-in:
+           destination: orders
+           contentType: application/json
+        availability-out:
+          destination: availability
+          contentType: application/json          
+  jpa:
+    show-sql: true
+    
+server:
+  port: 3333
+
+
+
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://annuaire:1111/eureka/
+    healthcheck:
+      enabled: true
+
+
+            
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - env
+        - beans
+        - health
+        - metrics
+        - httptrace
+        - refresh
+        - mappings
+        - hystrix.stream
+        - routes
+  endpoint:
+    health:
+      show-details: always      

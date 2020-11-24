@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: order-service
+  cloud:
+
+    stream:
+      kafka:
+        binder:
+          brokers: kafka
+      bindings:
+        order-out:
+           destination: orders
+           contentType: application/json
+        availability-response:
+          destination: availability
+          contentType: application/json   
+
+    loadbalancer:
+      ribbon:
+        enabled: false
+        
+server:
+  port: 2222
+   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://annuaire:1111/eureka/
+    healthcheck:
+      enabled: true
+
+
+            
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - env
+        - beans
+        - health
+        - metrics
+        - httptrace
+        - refresh
+        - mappings
+        - hystrix.stream
+        - routes
+  endpoint:
+    health:
+      show-details: always 
