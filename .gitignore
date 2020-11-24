@@ -2,7 +2,7 @@
 *.odt
 *.zip
 *.exe
-*.jar
+#*.jar
 *.msi
 *.log
 .classpath
