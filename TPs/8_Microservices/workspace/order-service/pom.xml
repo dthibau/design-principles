@@ -5,7 +5,7 @@
 
 	<groupId>org.formation</groupId>
 	<version>0.0.1-SNAPSHOT</version>
-	<artifactId>members-service</artifactId>
+	<artifactId>orders-service</artifactId>
 	<packaging>jar</packaging>
 
 	<parent>
